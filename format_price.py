@@ -21,7 +21,7 @@ def format_price_to_thousands(price_int):
     return '{0:,}'.format(price_int).replace(',', ' ')
 
 
-def isprice_digit(price_str, count=1): #count=1 added to trick wallie
+def isprice_digit(price_str, count=1):  # count=1 added to trick wallie
     return price_str.replace('.', '', count).isdigit()
 
 
